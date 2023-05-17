@@ -73,6 +73,9 @@ header {
         border: none;
         color: map-get($colores, "primario");
     } 
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 246, 246, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
     /* catalogo: menu desplegable (hover) */
     #menu-desplegable-hover {
         display: none;
@@ -86,6 +89,12 @@ header {
     /* catalogo: menu desplegable (dropdown) */
     #menu-desplegable-hamburguesa {
         display: block;
+        a {
+            color: map-get($colores, "secundario");
+        }
+        a:hover {
+            color: map-get($colores, "acento");
+        }
         .dropdown-menu {
             background-color: map-get($colores, "primario");
             border: none;
@@ -95,6 +104,9 @@ header {
             .dropdown-item:hover {
                 color: map-get($colores, "primario");
                 background-color: map-get($colores, "secundario");
+            }
+            .dropdown-item {
+                color: map-get($colores, "secundario");
             }
         }
     }
