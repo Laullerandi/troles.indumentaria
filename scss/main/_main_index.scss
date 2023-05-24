@@ -8,6 +8,12 @@
     background-image: url(../../images/Banner-3.jpg);
     background-size: cover;
     text-align: center;
+    .section-titulo {
+        font-size: 2.5rem;
+        color: map-get($colores, "acento");
+        text-shadow: 0px 4px 7px rgba(26, 26, 26, 1);
+        font-weight: bold;
+    }
     .sectionUno-subtituloBanner {
         font-size: 5rem;
         color: map-get($colores, "acento");
@@ -21,6 +27,9 @@
     /* banner */
     #sectionUno {
         height: 420px;
+        .section-titulo {
+            font-size: 1.8rem;
+        }
         .sectionUno-subtituloBanner {
             font-size: 4rem;
         }
@@ -31,6 +40,9 @@
     /* banner */
     #sectionUno {
         height: 360px;
+        .section-titulo {
+            font-size: 1.5rem;
+        }
         .sectionUno-subtituloBanner {
             font-size: 2.9rem;
         }
@@ -41,6 +53,9 @@
      /* banner */
     #sectionUno {
         height: 260px;
+        .section-titulo {
+            font-size: 1rem;
+        }
         .sectionUno-subtituloBanner {
             font-size: 1.5rem;
         }
